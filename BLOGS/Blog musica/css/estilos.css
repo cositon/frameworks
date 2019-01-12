@@ -11,16 +11,16 @@ POSIBLEMENTE BORRAR
 principal, buscador,contenido,persona
 */
 body{padding: 0 !important}
-header{padding:1rem 1rem 1rem 1rem;background-color: darksalmon}
+header{padding:1rem 0 1rem 1rem;background-color: darksalmon}
 #logo{height: 5rem;}
 .redSocial{height: 2rem;margin: 0.5rem}
 nav{padding:0.8rem;background-color: gray}
 .list-inline{margin-bottom: 0}
 .list-inline-item button{width:10vw;}
 main{background-color:lightblue}
-.principal{background-color:cadetblue;padding: 2rem;margin-bottom:1rem}
+.principal{background-color:cadetblue;margin-bottom:1rem;padding-top: 1rem}
 .buscador{background-color: aliceblue}
-.contenido{margin:1rem;}
+
 .persona{width: 2.5rem}
 form,.form-group, #comentario{display: inline;}
 #comentario{width: 87%}
@@ -28,8 +28,12 @@ form,.form-group, #comentario{display: inline;}
 .cajaComentario{padding-top: 1rem}
 .textarea{resize: none;height:2.5rem !important}
 #soda,#MJ{width: 100%;}
-#notaPrincipal{background-color:lavender;padding: 2rem;margin-bottom: 1rem}
-#notaSecundaria{background-color:rosybrown;padding: 2rem}
+#notaPrincipal{background-color:lavender;padding: 1rem;margin-bottom: 1rem}
+#notaSecundaria{background-color:rosybrown;padding: 1rem}
+.textarea, .buscar{border-radius: 15px}
+#buscador{background-color:aquamarine;}
+#lupa{width: 20px}
+#labelBuscar{margin-left: 1rem}
 
 
 @media(max-width: 767px)
@@ -39,6 +43,10 @@ form,.form-group, #comentario{display: inline;}
 	.list-inline-item button{width:100%;margin-top:2px;}
 	 #comentario{width: 80%}
 	.form-group{margin-left: 2vw}
+	.cajaBuscador{display: none}
+	.navegacion nav ul{padding:0.1 !important;margin:0!important;}
+	.navegacion nav ul li{padding-top:0.2rem;}
+	nav{padding:0;}
 
 
 	

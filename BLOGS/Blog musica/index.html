@@ -11,12 +11,13 @@
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body class="container-fluid">
-	<header>
-		<div class="row justify-content-center">
+	<div class="col-sm-12 col-md-12 col-lg-12">
+
+		<header class="row justify-content-between ">
 <!--NOTA PARA EL CORRECTOR
 	La imagen de ejemplo de next U posiciona al logo del lado izquierdo y a las redes sociales del lado derecho, sin embargo en el texto de las indicaciones dice lo contrario, por ello, debido a la ambiguedad se define el siguiente orden como gusto personal -->
 	<!--LOGO-->
-	<div class="col-sm-11 col-md-2 col-lg-2 offset-sm-1 offset-md-1 offset-lg-1">
+	<div class="col-sm-12 col-md-3 col-lg-3  ">
 		<img src="img/logo.png" alt="Logo del blog" id="logo">
 	</div>
 	<!--REDES SOCIALES-->
@@ -29,74 +30,115 @@
 			<a href="https://www.twitter.com"><img src="img/twitter.svg" alt="Logo de una red social"  class="redSocial"></a>
 		</div>				
 	</div>		
-</div>
+
 
 </header>
-<main >
-	<nav>
-		<ul class="list-inline d-flex justify-content-around row">
-			<li class="list-inline-item"><button class="btn">Inicio</button></li>
-			<li class="list-inline-item"><button class="btn">Artistas</button></li>
-			<li class="list-inline-item"><button class="btn">Grupos</button></li>
-			<li class="list-inline-item"><button class="btn">Top 10</button></li>
-			<li class="list-inline-item"><button class="btn">Letras</button></li>
-			<li class="list-inline-item"><button class="btn">Acordes</button></li>
-		</ul>
-	</nav>
-	<div class="row contenido">
-		<div class="col-sm-12 col-md-8 col-ld-8 principal">
-			<div id="notaPrincipal">
+<main class="row">
+	<div class="col-sm-12 col-md-12 col-lg-12 navegacion">
+		<nav class="row">
+			<ul class=" col-sm-12 list-inline d-flex justify-content-around row">
+				<li class="list-inline-item"><button class="btn">Inicio</button></li>
+				<li class="list-inline-item"><button class="btn">Artistas</button></li>
+				<li class="list-inline-item"><button class="btn">Grupos</button></li>
+				<li class="list-inline-item"><button class="btn">Top 10</button></li>
+				<li class="list-inline-item"><button class="btn">Letras</button></li>
+				<li class="list-inline-item"><button class="btn">Acordes</button></li>
+			</ul>
+		</nav>
+		<div class="row contenido">
+			<div class="col-sm-12 col-md-8 col-ld-8 principal">
+				<div id="notaPrincipal">
+					<div class="row">
+						<div class="col-sm-12 col-md-8 col-ld-8">
+							<h3>Nota principal</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam doloremque aspernatur soluta aperiam! Nisi quod, enim? Exercitationem voluptas, facilis magnam sint autem reprehenderit, eos arc</p>
+						</div>
+						<div class="col-sm-12 col-md-4 col-ld-4">
+							<img src="img/soda.jpg" alt="" class="rounded" id="soda"><!--AGREGAR ALT CAMBIAR STYLE QUE LA IMAGEN SE APRECIE EL ROUNDED-->
+						</div>					
+					</div>
+					<div class="row">					
+						<div class="col-sm-12 col-md-12 col-lg-12 cajaComentario">
+							<img src="img/persona.svg" alt="" class="persona">
+							<form action="">
+								<div class="form-group ">
+									<textarea name="" id="comentario" class="align-bottom form-control  textarea" placeholder="Comentario..."></textarea>
+
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div id="notaSecundaria">
+					<div class="row ">
+						<div class="col-sm-12 col-md-8 col-ld-8 order-2">
+							<h3>Nota Secundaria</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam doloremque aspernatur soluta aperiam! Nisi quod, enim? Exercitationem voluptas, facilis magnam sint autem reprehenderit, eos arc</p>
+						</div>
+						<div class="col-sm-12 col-md-4 col-ld-4 order-1">
+							<img src="img/MichaelJackson.jpg" alt="" class="rounded" id="MJ"><!--AGREGAR ALT CAMBIAR STYLE QUE LA IMAGEN SE APRECIE EL ROUNDED-->
+						</div>					
+					</div>
+					<div class="row ">					
+						<div class="col-sm-12 col-md-12 col-lg-12 cajaComentario">
+							<img src="img/persona.svg" alt="" class="persona">
+							<form action="">
+								<div class="form-group ">
+									<textarea name="" id="comentario" class="align-bottom form-control   textarea" placeholder="Comentario..."></textarea>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cajaBuscador col-md-4 col-ld-4">
+				<div id="buscador">
+					<div class="row justify-content-center">
+						<div class="col-sm-11 col-md-11 col-ld-11  buscadorForm">
+							<form action="">
+								<div class="form-group">
+									<div class="input-group ">
+										<div class="input-group-prepend">
+											<span class="input-group-text buscar" id="buscar"><img src="img/lupa.svg" alt="" id="lupa"></span>
+										</div>
+										<input type="text" class="form-control buscar" id="buscarInput" aria-describedby="buscar">
+									</div>							
+									<label for="buscarInput" id="labelBuscar">Buscar</label>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
 				<div class="row">
-					<div class="col-sm-12 col-md-8 col-ld-8">
-						<h3>Nota principal</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam doloremque aspernatur soluta aperiam! Nisi quod, enim? Exercitationem voluptas, facilis magnam sint autem reprehenderit, eos arc</p>
-					</div>
-					<div class="col-sm-12 col-md-4 col-ld-4">
-						<img src="img/soda.jpg" alt="" class="rounded" id="soda"><!--AGREGAR ALT CAMBIAR STYLE QUE LA IMAGEN SE APRECIE EL ROUNDED-->
-					</div>					
-				</div>
-				<div class="row">					
-					<div class="col-sm-12 col-md-12 col-lg-12 cajaComentario">
-						<img src="img/persona.svg" alt="" class="persona">
-						<form action="">
-							<div class="form-group ">
-								<textarea name="" id="comentario" class="align-bottom form-control rounded textarea" placeholder="Comentario..."></textarea>
+					<div class="col-sm-12 col-md-12 col-ld-12">
+						<div class="list-group">
+							<a href="#" class="list-group-item list-group-item-action ">
+								Cras justo odio
+							</a>
+							<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+							<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+							<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+							<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+							<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+							<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+							<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+							<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+							<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+							<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
 
-							</div>
-						</form>
+
+
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div id="notaSecundaria">
-				<div class="row ">
-					<div class="col-sm-12 col-md-8 col-ld-8 order-2">
-						<h3>Nota Secundaria</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam doloremque aspernatur soluta aperiam! Nisi quod, enim? Exercitationem voluptas, facilis magnam sint autem reprehenderit, eos arc</p>
-					</div>
-					<div class="col-sm-12 col-md-4 col-ld-4 order-1">
-						<img src="img/MichaelJackson.jpg" alt="" class="rounded" id="MJ"><!--AGREGAR ALT CAMBIAR STYLE QUE LA IMAGEN SE APRECIE EL ROUNDED-->
-					</div>					
-				</div>
-				<div class="row ">					
-					<div class="col-sm-12 col-md-12 col-lg-12 cajaComentario">
-						<img src="img/persona.svg" alt="" class="persona">
-						<form action="">
-							<div class="form-group ">
-								<textarea name="" id="comentario" class="align-bottom form-control rounded textarea" placeholder="Comentario..."></textarea>
 
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
 		</div>
-		<div class="col-sm-12 col-md-4 col-ld-4 buscador">Lorem ipsum d	animi est. Atque dolor quibusdam ratione! Temporibus rem nesciunt sed quisquam deserunt blanditiis minus dicta.</div>
-
-
 	</div>
 
 </main>
-
+</div>
 </body>
 </html>
