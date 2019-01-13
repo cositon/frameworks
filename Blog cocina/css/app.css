@@ -1,0 +1,29 @@
+/*Colores
+*/
+.fondo{background-color: rgba(255,238,234,0.9)}
+.primario,p,h1,h2{color:#95819F;}
+/*.secundario{color:#EFE48F}*/
+.secundario{color:#FFFAEA}
+
+body{background-image: url("../img/fondo.jpg");position: static;background-repeat: no-repeat;background-size: cover}
+
+#slogan{text-align: right;padding-right:2rem}
+h1{margin:0!important;padding-left: 2rem}
+#titulo{border-right: 2px ridge #FFFAEA;margin-top:1rem;}
+hr{border-top:1px ridge #FFFAEA;margin-left:1vw;margin-right:1vw;}
+.colIzq{background-color: #FFFAEA;}
+#lupa{width: 24px}
+.colDer,.colIzq{margin-top:.5rem;padding-top:.5rem;}
+.bold{font-weight: bold}
+#favoritos{margin-left:1vw;font-size: 1rem}
+.platoImg{width:100%}
+
+
+@media(max-width: 1304px){
+	h1{font-size: 32px}
+	p{font-size: 15px;}
+}
+@media(max-width: 950px){
+	h1{font-size: 18px}
+	p{font-size: 11px;padding-right: 1rem}
+}
