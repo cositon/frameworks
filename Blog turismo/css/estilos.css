@@ -1,0 +1,37 @@
+
+ header{margin-bottom: 0!important}
+ main{margin:0!important; padding:0}
+ #logo{margin: 2vw}
+ .slogan{;padding-left:2vw;}
+ nav ul{margin-right: 3vw!important;}
+ .barraSuperior{height: 10vw}
+ .slogan{padding-top:8vw;}
+
+.redesSociales{padding:0!important;width: 8vh!important}
+ .redesSociales .row{padding:1vh!important;margin:0!important;width: 100%}
+
+
+
+.navtext{width: 15vw}
+p{line-height: normal}
+
+@media(max-width: 600px){
+ .slogan{padding-top:1vw;}
+
+
+}
+@media(max-width: 991px) and (min-width:601px){
+ .redesSociales{padding:0!important;width: 5vh!important}
+
+}
+@media(max-width: 1199px) and (min-width: 992px){
+ .redSocial{width: 8vh}
+	
+
+}
+
+@media(min-width: 1200px){
+ .slogan{padding-top:7vw;}
+
+}
+
