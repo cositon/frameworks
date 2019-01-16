@@ -1,41 +1,63 @@
 
+ 
  header{margin-bottom: 0!important}
  main{margin:0!important; padding:0}
  #logo{margin: 2vw;z-index: 2;position: relative}
  .slogan{;padding-left:2vw;}
- nav ul{margin-right: 3vw!important;}
+ nav ul{margin-right: 3vw!important}
+
  .barraSuperior{height: 10vw;z-index: 1;position:relative;}
- .slogan{padding-top:8vw;}
+ 
+ .navLista{}
 
 .redesSociales{padding:0!important;width: 8vh!important;margin-left: 0!important}
  .redesSociales .row{padding:1vh!important;margin:0!important;width: 100%}
  .contenedorImgDoble{margin-bottom: 0}
 .imgDoble{margin:1vh;}
-.imgDoble, .imgCentral{border:1vh solid indigo;}
-
+img{border:1vh solid #cfd8dc;}
+article{padding:0 2vw 0.2vw;margin-bottom: .2vw!important}
+.articulo{padding:1vw 2vw 3vw ;}
+.post{margin-bottom: 0}
+#aboutme{padding-top:1vw;}
+.redesSociales img{border:none;}
+.comentarios{padding:0 1vw;margin-bottom: 0}
+section{padding: 1vw}
+.aboutmeText{padding:0 2vw!important}
+.aboutmeText p{margin-top: 4vw}
+ #persona i{font-size:7vh}
+.comentarioBox{margin: 0!important;padding: 0 0 2vh !important}
+#persona{padding: 0}
+a:hover{background-color:none!important;}
+.contenedorImgAboutme{margin-bottom: 0}
+body{background-image:url("../img/fondo.jpg");  background-attachment: fixed;background-size: 100%}
+textarea:focus:not([readonly])+label{border-bottom:1px solid #00695c!important;box-shadow: 0 1px 0 0 #00695c}
 
 .navtext{width: 15vw}
 p{line-height: normal}
 
 @media(max-width: 600px){
- .slogan{padding-top:1vw;text-align: right}
+ .slogan{padding-top:1vw;}
+ .contenedorSlogan{float:right!important;}
  .barraSuperior{min-height: 56px}
+ .post{padding: 4vw!important}
 
 
 }
 @media(max-width: 991px) and (min-width:601px){
- .redesSociales{padding:0!important;width: 5vh!important}
 
+.slogan{padding-top:3vw;}
+.posteos{padding: 0 4vw 0!important}
+	.slogan{padding-top:7vw;}
 
 }
 @media(max-width: 1199px) and (min-width: 992px){
  .redSocial{width: 8vh}
-	
+ .slogan{padding-top:4vw;}
 
 }
 
 @media(min-width: 1200px){
- .slogan{padding-top:7vw;}
+.slogan{padding-top:4vw;}
 
 }
 
