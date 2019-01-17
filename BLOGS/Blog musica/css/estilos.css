@@ -19,19 +19,17 @@
 */
 
 
-
-
 body{padding: 0 !important}
 /*********HEADER*********/
-header{padding:1rem 0 .2rem 1rem;background-color: #1e85c1}/*CAMBBIAR COLOR*/
+header{padding:1rem 0 .2rem 1rem;background-color: #1e85c1}
 /***LOGO***/
 #logo{height: 7rem;padding-bottom: 1rem;}
 /***REDES SOCIALES***/
 .redSocial{height: 2rem;margin: 0.5rem}
 /*********MAIN*********/
 /***MENU NAVEGACION***/
-main{background-color:lightblue;}/*CAMBIAR COLOR*/
-nav{padding:1rem 0;background-color: #26418f}/*CAMBIAR COLOR*/
+main{background-color:lightblue;}
+nav{padding:1rem 0;background-color: #26418f}
 .list-inline{margin-bottom: 0;}
 .list-inline-item button{width:100%;}
 .list-inline-item:not(:last-child){margin-right: 0!important;}
@@ -39,7 +37,8 @@ nav{padding:1rem 0;background-color: #26418f}/*CAMBIAR COLOR*/
 .principal{padding: 1rem 1rem 0 0}
 /***COLUMNA IZQUIERDA***/
 /***ENTRADAS AL BLOG**/
-.articulos{background-color:#eee;padding: 1rem;}/*CAMBIAR COLOR*/
+.articulos{background-color:#eee;padding: 1rem;}
+#segundoH3{padding-top:1rem;}
 	/*IMAGEN DEL POST*/
 	.musicos{width: 100%;}
 	/*SECCION DE COMENTARIOS DEL POST*/
