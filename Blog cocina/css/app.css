@@ -1,37 +1,48 @@
-/*Colores
+/*ID y Clases por orden de aparicion
+.contenido : Elementos del contenido que poseen las mismas propiedades de padding
+.fondo:Contenedor que poseen un color de fondo
+#h1Contenedor:Contenedor dodne se encuentra el h1 del blog
+#slogan: id de la etiqueta p que contiene el slogan
+#contenedorIzq:Contenedor de la columna izquierda
+#colIzq: Contenedor pequeño del contenido de la columna izquierda
+#lupa: id del icono de una lupa
+.bold: Elementos que tienen bold como valor de font-weight
+#historial:Lista desordenada con el historial
+.posteo:Contenedor de la publicacion del blog
+.imagenPost: Imagen del post
+.comentariosUsuarios: Caja contendora de cada comentario de los usuarios
+.persona:Icono de una persona
+
 */
+
+/**COLORES**/
 .fondo{background-color: rgba(255,238,234,0.9)}
-.primario,p,h1,h2,h3{color:#95819F;}
-/*.secundario{color:#EFE48F}*/
+.primario,p,h1,h2,h3,h4,label{color:#95819F;}
 .secundario{color:#FFFAEA}
 
+
 body{background-image: url("../img/fondo.jpg");position: static;background-repeat: no-repeat;background-size: cover}
-main{margin:0;}
-#slogan{text-align: right;padding-right:2rem}
-h1{margin:0!important;padding-left: 2rem;padding-top: 1rem}
-#titulo{border-right: 2px ridge #FFFAEA;margin-top:1rem;}
-hr{border-top:1px ridge #FFFAEA;margin:.5vw auto;}
-.colIzq,.colDer{background-color: #FFFAEA;}
 .contenido{padding-left: 1rem;padding-right: 1rem}
-
-
-
-#lupa{width: 24px}
-.colDer,.colIzq{margin-top:.5rem;padding-top:.5rem;}
+/***HEADER***/
+#h1Contenedor{border-right: 2px ridge #FFFAEA;margin-top:1rem;margin-left: 2rem}
+h1{padding-left: 1rem;padding-top: 1rem}
+#slogan{text-align: right;}
+hr{border-top:1px ridge #FFFAEA;margin:.5vw auto;}
+/***MAIN***/
+.contenedorIzq{padding:0;}
+.colIzq{padding: 1rem}
+.colIzq,.posteo{background-color: #FFFAEA;margin-top:.5rem;padding-top:.8rem;}
+#lupa{width: 1.5rem}
 .bold{font-weight: bold}
-#favoritos{margin-left:1vw;font-size: 1rem; font-variant: small-caps;}
-.platoImg{width:100%}
+h4{margin-left:1vw; font-variant: small-caps;}
 .historialh3{padding-left: 1vw;margin-top: 2vw}
 .historial{padding-left:2vw;}
-#menu,.historial li a{padding-top:0.5vw;}
+.menu,.historial li a{padding-top:0.5vw;}
+article{margin-bottom: 3vw}
 textarea{resize: none}
 .persona{padding-right:.5rem;padding-left: .5rem}
 .persona p{margin:1vw 0;}
-.post{padding-top:2vw;}
-article{margin-bottom: 3vw}
-.articulo{padding-left: 2vw;padding-right: 2vw}
 .comentariosUsuarios{padding-bottom: 1vw}
-
 @media(max-width: 1304px){
 	h1{font-size: 32px}
 	p{font-size: 15px;}
@@ -40,4 +51,9 @@ article{margin-bottom: 3vw}
 	h1{font-size: 18px}
 	p{font-size: 11px;padding-right: 1rem}
 	.imagenPost{width: 70%;height: 70%;margin-left:auto;margin-right: auto}
+}
+
+@media(max-width:640px){
+	#slogan{text-align: center}
+	#h1Contenedor{border:0;}
 }
