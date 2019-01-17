@@ -1,54 +1,81 @@
-/*
-IDs:
-#logo: logo del sitio
-#soda:imagen de soda stereo;
-#MJ:imagen de Michael Jackson;
+/*ID Y CLASES POR ORDEN DE APARICION
+****HEADER****
+#logo:Imagen del logo
+.resSocial: Imagenes de las redes sociales
 
-CLASES:
-.redSocial: iconos de redes sociales;
+****MAIN****
+#listaDesordenada:Lista que forma parte del menu de navegacion
+.articulos: Cada uno de los post del blog
+.musicos:Imagenes con los musicos de la nota
+.cajaComentario:Contenedor de la caja de comentarios
+.persona:Icono de una persona
+.comentario:Textarea para comentarios
+#cajaBuscador:Contenedor del buscador;
+.buscar:Elementos del buscador que requieen de bordes redondeados;
+#lupa:Icono de una lupa
+#buscarInput:Input correspondiente al buscador
+#labelBuscar:Label del buscador;
 
-POSIBLEMENTE BORRAR
-principal, buscador,contenido,persona
 */
-body{padding: 0 !important}
-header{padding:1rem 0 1rem 1rem;background-color: darksalmon}
-#logo{height: 5rem;}
-.redSocial{height: 2rem;margin: 0.5rem}
-nav{padding:0.8rem;background-color: gray}
-.list-inline{margin-bottom: 0}
-.list-inline-item button{width:10vw;}
-main{background-color:lightblue}
-.principal{background-color:cadetblue;margin-bottom:1rem;padding-top: 1rem}
-.buscador{background-color: aliceblue}
 
-.persona{width: 2.5rem}
-form,.form-group, #comentario{display: inline;}
-#comentario{width: 87%}
+
+
+
+body{padding: 0 !important}
+/*********HEADER*********/
+header{padding:1rem 0 .2rem 1rem;background-color: #1e85c1}/*CAMBBIAR COLOR*/
+/***LOGO***/
+#logo{height: 7rem;padding-bottom: 1rem;}
+/***REDES SOCIALES***/
+.redSocial{height: 2rem;margin: 0.5rem}
+/*********MAIN*********/
+/***MENU NAVEGACION***/
+main{background-color:lightblue;}/*CAMBIAR COLOR*/
+nav{padding:1rem 0;background-color: #26418f}/*CAMBIAR COLOR*/
+.list-inline{margin-bottom: 0;}
+.list-inline-item button{width:100%;}
+.list-inline-item:not(:last-child){margin-right: 0!important;}
+/***CONTENIDO PRINCIPAL DEL BLOG***/
+.principal{padding: 1rem 1rem 0 0}
+/***COLUMNA IZQUIERDA***/
+/***ENTRADAS AL BLOG**/
+.articulos{background-color:#eee;padding: 1rem;}/*CAMBIAR COLOR*/
+	/*IMAGEN DEL POST*/
+	.musicos{width: 100%;}
+	/*SECCION DE COMENTARIOS DEL POST*/
+	.cajaComentario{padding-top: 1rem}
+	.persona{width: 2.5rem}		
+	/*TEXTAREA PARA COMENTARIOS*/
+	.comentario{width: 87%;resize: none;height:3rem !important}
+	/*PROPIEDADES DE LOS CAMPOS DE ENTRADA PARA COMENTARIOS Y BUSCADOR*/ 
+	
+	.textarea, .buscar{border-radius: 15px}
+	form,.form-group, .comentario{display: inline;}
+
+
+/***COLUMNA DERECHA***/
+/***BUSCADOR**/
+#cajaBuscador{background-color: #eee;margin-bottom: 1rem}
 .form-group{margin-left: 1vw}
-.cajaComentario{padding-top: 1rem}
-.textarea{resize: none;height:2.5rem !important}
-#soda,#MJ{width: 100%;}
-#notaPrincipal{background-color:lavender;padding: 1rem;margin-bottom: 1rem}
-#notaSecundaria{background-color:rosybrown;padding: 1rem}
-.textarea, .buscar{border-radius: 15px}
-#buscador{background-color:aquamarine;}
 #lupa{width: 20px}
 #labelBuscar{margin-left: 1rem}
 
 
+
 @media(max-width: 767px)
-{
+{/*********HEADER*********/
+	/****LOGO***/
 	#logo{margin-bottom: 10px}
-	.list-inline-item{width:100%;margin-right: 0!important}
-	.list-inline-item button{width:100%;margin-top:2px;}
-	 #comentario{width: 80%}
+	/*********MAIN*********/
+	/***MENU NAVEGACION***/
+	#listaDesordenada{padding:0!important;}
+	.list-inline-item{;margin-right: 0!important;padding-top:0.4rem;}
+	.list-inline-item button{width:100%;margin-top:2px;padding: 0!important; margin:0;}
+	/*TEXTAREA PARA COMENTARIOS*/	
+	.persona{float:left;}
+	.comentario{width: 80%}
+	/***BUSCADOR***/
 	.form-group{margin-left: 2vw}
-	.cajaBuscador{display: none}
-	.navegacion nav ul{padding:0.1 !important;margin:0!important;}
-	.navegacion nav ul li{padding-top:0.2rem;}
-	nav{padding:0;}
-
-
-	
-	
+	#cajaBuscador{display: none}
+		
 }
